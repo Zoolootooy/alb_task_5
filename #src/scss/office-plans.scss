@@ -26,12 +26,27 @@ $desk: 1024px;
     letter-spacing: -0.45px;
     color: #222222;
     opacity: 1;
+
+    @media(max-width: $touch) {
+      font-size: 18px;
+      max-width: 92%;
+    }
   }
 
   &__subtitle{
     text-align: center;
     @extend %auto-margins;
     margin-top: 8%;
+
+    font: normal normal 600 42px OpenSans;
+    letter-spacing: -0.7px;
+    color: #222222;
+    opacity: 1;
+
+    @media(max-width: $touch) {
+      font-size: 28px;
+    }
+
   }
   &__row {
 
@@ -53,14 +68,13 @@ $desk: 1024px;
   letter-spacing: -0.7px;
   color: #222222;
   opacity: 1;
+
+  @media(max-width: $touch) {
+    font-size: 28px;
+    max-width: 80%;
+  }
 }
 
-.Subtitle {
-  font: normal normal 600 42px OpenSans;
-  letter-spacing: -0.7px;
-  color: #222222;
-  opacity: 1;
-}
 
 .plan {
   text-align: center;
