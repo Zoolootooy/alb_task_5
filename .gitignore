@@ -3,3 +3,5 @@
 /dist
 /node_modules/
 /doc/
+/#src/html.txt
+/#src/html_partials/_test.html
