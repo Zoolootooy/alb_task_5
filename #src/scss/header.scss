@@ -155,6 +155,26 @@
       width: 188px;
     }
   }
+
+  &__reverse-columns {
+    //@extend %auto-margins;
+    //text-align: center;
+    //align-items: center;
+    //justify-content: center;
+    display: flex;
+    //flex-direction: column;
+    //flex-wrap: wrap;
+
+    @media(max-width: 1023px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+
+    @media(max-width: 768px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
 }
 
 .navbar-start {
@@ -211,22 +231,3 @@
 
 }
 
-.reverse-columns {
-  //@extend %auto-margins;
-  //text-align: center;
-  //align-items: center;
-  //justify-content: center;
-  display: flex;
-  //flex-direction: column;
-  //flex-wrap: wrap;
-
-  @media(max-width: 1023px) {
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-
-  @media(max-width: 768px) {
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-}

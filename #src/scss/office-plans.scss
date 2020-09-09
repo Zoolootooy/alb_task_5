@@ -6,9 +6,6 @@
 $touch: 1023px;
 $desk: 1024px;
 
-.colll {
-  background: #8530f7;
-}
 
 .plans {
   background: #FAFAFA 0% 0% no-repeat padding-box;
@@ -18,15 +15,14 @@ $desk: 1024px;
   &__title {
     @extend %auto-margins;
     text-align: center;
-    width: 72%;
   }
   &__text-title {
     @extend %auto-margins;
     text-align: center;
-    width: 94%;
+    width: 85%;
 
     text-align: center;
-    font: normal normal 600 18px/24px OpenSans;
+    font: normal normal 600 24px OpenSans;
     letter-spacing: -0.45px;
     color: #222222;
     opacity: 1;
@@ -38,8 +34,8 @@ $desk: 1024px;
     margin-top: 8%;
   }
   &__row {
-    margin-top: 8.5%;
-    max-width: 1224px;
+
+
   }
   &__item {
     width: 85%;
@@ -53,14 +49,14 @@ $desk: 1024px;
 }
 
 .Title {
-  font: normal normal 700 28px/34px OpenSans;
+  font: normal normal 700 42px OpenSans;
   letter-spacing: -0.7px;
   color: #222222;
   opacity: 1;
 }
 
 .Subtitle {
-  font: normal normal 600 28px/42px OpenSans;
+  font: normal normal 600 42px OpenSans;
   letter-spacing: -0.7px;
   color: #222222;
   opacity: 1;
@@ -74,6 +70,13 @@ $desk: 1024px;
   border-radius: 6px;
   opacity: 1;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-bottom: 30px;
+
   @extend %auto-margins;
 
 
@@ -82,23 +85,22 @@ $desk: 1024px;
 
   @media(min-width: $desk) {
     height: 663px;
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
   }
 
 
 
   @media(max-width: $touch) {
-    max-height: 335px;
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
   }
 
 
 
   &__title {
     text-align: center;
-    font: normal normal 600 32px/18px OpenSans;
+    font: normal normal 600 42px OpenSans;
     letter-spacing: -0.8px;
     color: #8530F7;
     opacity: 1;
@@ -134,7 +136,7 @@ $desk: 1024px;
 
   &__price {
     text-align: left;
-    font: normal normal 600 44px/34px OpenSans;
+    font: normal normal 600 60px OpenSans;
     letter-spacing: -1.1px;
     color: #222222;
     opacity: 1;
@@ -142,7 +144,7 @@ $desk: 1024px;
 
   &__period {
     text-align: left;
-    font: normal normal 400 14px/31px OpenSans;
+    font: normal normal 400 22px OpenSans;
     letter-spacing: -0.35px;
     color: #222222;
     opacity: 1;
@@ -159,20 +161,22 @@ $desk: 1024px;
 
   &__name {
     text-align: center;
-    font: normal normal 700 16px/28px OpenSans;
+    font: normal normal 700 24px OpenSans;
     letter-spacing: -0.4px;
     color: #222222;
     opacity: 1;
 
+    max-width: 285px;
+
     @media(min-width: $desk) {
-      margin-top: 10%;
+      //margin-top: 10%;
       font-size: 16px/28px;
     }
   }
 
   &__text {
     text-align: center;
-    font: normal normal 400 14px/22px OpenSans;
+    font: normal normal 400 18px OpenSans;
     letter-spacing: -0.35px;
     color: #939393;
     opacity: 1;
@@ -184,7 +188,7 @@ $desk: 1024px;
 
   &__clarification {
     text-align: center;
-    font: normal normal bold 16px/28px Open Sans;
+    font: normal normal bold 24px Open Sans;
     letter-spacing: -0.4px;
     color: #222222;
     opacity: 1;
@@ -195,13 +199,15 @@ $desk: 1024px;
   &__button {
     @extend %auto-margins;
     width: 230px;
-    height: 42px;
+    height: 60px;
     text-align: center;
     background: #0071E3 0% 0% no-repeat padding-box;
     color: #FFFFFF;
-    font: normal normal 600 27px/45px OpenSans;
+    font: normal normal 600 27px OpenSans;
     border-radius: 6px;
     opacity: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
 
     margin-top: 3%;
