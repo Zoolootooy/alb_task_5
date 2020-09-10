@@ -1,0 +1,116 @@
+$markerSize: 32px;
+$markerLine: 2px;
+$markerItemSize: $markerSize*0.75; //24
+$markerTop: ($markerSize - $markerItemSize)/2; //4
+$markerLeft: ($markerItemSize - $markerLine)/2 + $markerTop; //15
+$markerItemTop: ($markerItemSize - $markerLine)/2;
+$markerItemLeft: $markerItemTop*(-1);
+$touch: 1023px;
+
+
+.why {
+  background: transparent linear-gradient(292deg, #57D6F7 0%, #736FDB 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+  &__title{
+    text-align: center;
+    font: normal normal 700 42px OpenSans;
+    letter-spacing: -1.05px;
+    color: #FFFFFF;
+    opacity: 1;
+
+    margin-bottom: 70px;
+
+    @media(max-width: $touch) {
+      font-size: 32px;
+    }
+
+    @media(max-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media(max-width: 500px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {}
+
+  &__item{
+    margin-bottom: 10px;
+
+  }
+
+  &__body-item {
+    display: flex;
+
+    flex-wrap: wrap;
+    @media(max-width: 768px) {
+      flex-direction: row;
+      justify-content: start;
+    }
+  }
+
+
+  &__marker-item{
+    width: $markerSize;
+    height: $markerSize;
+    background: #3E2155 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+  }
+
+  &__marker {
+    background: #FFFFFF;
+    height:$markerItemSize;
+    width: $markerLine;
+    position: relative;
+    left: $markerLeft;
+    top: $markerTop;
+    &:after{
+      content: "";
+      height: $markerLine;
+      width: $markerItemSize;
+      background: #FFFFFF;
+      position: absolute;
+      left: $markerItemLeft;
+      top: $markerItemTop;
+    }
+  }
+
+  &__text-item{
+    text-align: left;
+    font: normal normal 600 20px OpenSans;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+    opacity: 1;
+
+    @media(max-width: $touch) {
+      font-size: 16px;
+    }
+
+    @media(max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__reverse-columns{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media(max-width: $touch) {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__image{
+    text-align: center;
+
+    @media(max-width: 500px) {
+      max-width: 265px;
+    }
+  }
+}
