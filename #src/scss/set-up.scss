@@ -1,0 +1,51 @@
+.setUp {
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    font: normal normal 700 42px OpenSans;
+    letter-spacing: -1.05px;
+    color: #222222;
+    opacity: 1;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font: normal normal 600 24px OpenSans;
+    letter-spacing: -0.6px;
+    color: #222222;
+    opacity: 1;
+
+    margin-bottom: 60px;
+  }
+
+  &__text-title{
+    text-align: left;
+    font: normal normal 700 20px OpenSans;
+    letter-spacing: -0.5px;
+    color: #222222;
+
+    margin-bottom: 10px;
+  }
+
+  &__text{
+    text-align: left;
+    font: normal normal 400 20px OpenSans;
+    letter-spacing: -0.5px;
+    color: #222222;
+
+    a {
+      text-decoration: underline;
+      color: #E31D86;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
