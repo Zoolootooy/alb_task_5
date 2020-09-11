@@ -1,0 +1,138 @@
+.companyFormation {
+  padding-top: 155px;
+  padding-bottom: 155px;
+
+  @media(max-width: 1023px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title{
+    text-align: center;
+    font: normal normal 700 42px OpenSans;
+    letter-spacing: -1.05px;
+    color: #222222;
+    opacity: 1;
+
+    @media(max-width: 1023px) {
+      font-size: 28px;
+    }
+  }
+  &__images{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    position: relative;
+    top: 10px;
+
+    @media(max-width: 768px) {
+      top: 150px;
+      justify-content: center;
+      left: -20px;
+    }
+  }
+
+  &__image_rocket{
+    position: relative;
+    left: 50px;
+    z-index: 10;
+  }
+
+  &__image_man{
+    position: relative;
+    top: 25px;
+  }
+
+  &__header{}
+  &__subtitle{
+    text-align: left;
+    font: normal normal 700 152px OpenSans;
+    line-height: 130px;
+    letter-spacing: -3.8px;
+    color: #0091FF;
+    opacity: 1;
+
+    position: relative;
+    left: -10px;
+
+    @media(max-width: 1023px) {
+      font-size: 127px;
+    }
+
+
+    @media(max-width: 768px) {
+      top: -420px;
+      left: -5px;
+      text-align:center;
+    }
+  }
+  &__text-header{
+    text-align: left;
+    font: normal normal 700 34px OpenSans;
+    letter-spacing: -0.85px;
+    color: #0091FF;
+    opacity: 1;
+
+    @media(max-width: 1023px) {
+      font-size: 28px;
+    }
+
+    @media(max-width: 768px) {
+      position: relative;
+      top: -430px;
+      text-align:center;
+    }
+  }
+
+
+  &__description{
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__title-description{
+    padding-left: 0;
+
+    text-align: left;
+    font: normal normal 700 22px OpenSans;
+    letter-spacing: -0.55px;
+    color: #222222;
+    opacity: 1;
+
+    @media(max-width: 1023px) {
+      font-size: 20px;
+    }
+    @media(max-width: 768px) {
+      text-align:center;
+    }
+  }
+  &__text{
+    text-align: left;
+    font: normal normal 400 22px OpenSans;
+    letter-spacing: -0.55px;
+    opacity: 1;
+
+    width: 390px;
+
+    @media(max-width: 1023px) {
+      font-size: 20px;
+    }
+    @media(max-width: 768px) {
+      text-align:center;
+      margin-right: 0;
+      width: 300px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #0091FF;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
