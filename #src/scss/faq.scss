@@ -1,0 +1,53 @@
+.faq {
+  padding-top: 70px;
+  padding-bottom: 125px;
+
+  &__title{
+    text-align: center;
+    font: normal normal 700 42px OpenSans;
+    letter-spacing: -1.05px;
+    color: #222222;
+    opacity: 1;
+
+    @media(max-width: 1214px) {
+      font-size: 28px;
+    }
+  }
+  &__subtitle{
+    text-align: center;
+    font: normal normal 600 24px OpenSans;
+    letter-spacing: -0.6px;
+    color: #222222;
+    opacity: 1;
+
+    margin-bottom: 75px;
+
+    @media(max-width: 1214px) {
+      font-size: 18px;
+    }
+  }
+
+  &__image{
+    &_dyno{
+      position: relative;
+      top: -50px;
+    }
+
+    &_letter {
+      margin-top: 70px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text{
+    text-align: left;
+    font: normal normal 400 20px/36px OpenSans;
+    letter-spacing: -0.5px;
+    color: #222222;
+
+    @media(max-width: 1214px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
