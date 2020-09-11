@@ -232,15 +232,6 @@ $desk: 1024px;
   }
 
   &__button {
-    @extend %auto-margins;
-    width: 230px;
-    height: 60px;
-    text-align: center;
-    background: #0071E3 0% 0% no-repeat padding-box;
-    color: #FFFFFF;
-    font: normal normal 600 27px OpenSans;
-    border-radius: 6px;
-    opacity: 1;
     padding-top: 25px;
     padding-bottom: 25px;
 
@@ -265,4 +256,18 @@ $desk: 1024px;
     }
   }
 
+}
+
+.button_blue {
+  @extend %auto-margins;
+  width: 230px;
+  height: 60px;
+  text-align: center;
+  background: #0071E3 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+  font: normal normal 600 27px OpenSans;
+  border-radius: 6px;
+  opacity: 1;
+
+  border-color: transparent;
 }

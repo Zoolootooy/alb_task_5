@@ -1,0 +1,56 @@
+.weHelped {
+
+  position: relative;
+  top: 152.5px;
+
+
+  &__body {
+    background: transparent linear-gradient(284deg, #57D6F7 0%, #736FDB 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 12px 6px 40px #0048661A;
+    border-radius: 6px;
+    align-items: center;
+    height: 305px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title{
+    text-align: left;
+    font: normal normal 700 32px OpenSans;
+    letter-spacing: -0.8px;
+    color: #222222;
+    opacity: 1;
+  }
+  &__subtitle{
+    text-align: left;
+    font: normal normal 700 32px OpenSans;
+    letter-spacing: -0.8px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+
+  &__image {
+    position: relative;
+    top: 20px;
+    width: 280px;
+    //left: 20px;
+  }
+
+  &__button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    position: relative;
+    top: 90px;
+    left: -22%;
+
+    .button_blue {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
