@@ -1,0 +1,91 @@
+.footer {
+  background: var(--unnamed-color-222222) 0% 0% no-repeat padding-box;
+  background: #222222 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+  padding-top: 225px;
+
+  &__images {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__title {
+    text-align: left;
+    font: normal normal 700 18px/28px OpenSans;
+    letter-spacing: -0.45px;
+    color: #FFFFFF;
+    opacity: 1;
+
+    margin-bottom: 10px;
+  }
+
+  &__subtitle{
+    text-align: left;
+    font: normal normal 700 16px OpenSans;
+    letter-spacing: -0.4px;
+    color: #3EB8E5;
+    opacity: 1;
+  }
+
+  &__description {
+    margin-bottom: 10px;
+    & a {
+      text-align: left;
+      font: normal normal 40 16px OpenSans;
+      letter-spacing: -0.4px;
+      color: #FFFFFF;
+      opacity: 1;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__contacts{
+    text-align: left;
+    font: normal normal 400 16px/28px OpenSans;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    opacity: 1;
+
+
+    &_phone{
+      text-align: left;
+      font: normal normal 400 22px/28px OpenSans;
+      letter-spacing: -0.55px;
+      color: #3EB8E5;
+      opacity: 1;
+    }
+    &_email{
+      text-align: left;
+      font: normal normal 400 22px/28px OpenSans;
+      letter-spacing: -0.55px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    &_copyr{
+      font: normal normal 400 16px/28px OpenSans;
+      letter-spacing: -0.4px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+  }
+
+  &__icons{
+  }
+
+  &__icon {
+    color: white;
+    font-size: 35px;
+    margin-right: 20%;
+
+    &:hover{
+      opacity: 0.7;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
