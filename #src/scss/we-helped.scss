@@ -2,6 +2,17 @@
 
   position: relative;
   top: 152.5px;
+  @media (max-width: 1023px) {
+    top: 287.5px;
+  }
+
+
+  .container {
+    @media (max-width: 768px) {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
 
 
   &__body {
@@ -10,37 +21,83 @@
     border-radius: 6px;
     align-items: center;
     height: 305px;
+    @media (max-width: 1023px) {
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 1023px) {
+      height: 575px;
+    }
+
+
   }
 
   &__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
   }
 
-  &__title{
+  &__title {
     text-align: left;
     font: normal normal 700 32px OpenSans;
     letter-spacing: -0.8px;
     color: #222222;
     opacity: 1;
+
+    @media (max-width: 1023px) {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
-  &__subtitle{
+  &__subtitle {
     text-align: left;
     font: normal normal 700 32px OpenSans;
     letter-spacing: -0.8px;
     color: #FFFFFF;
     opacity: 1;
+
+    @media (max-width: 1023px) {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 
   &__image {
     position: relative;
     top: 20px;
     width: 280px;
+
+    @media (max-width: 1023px) {
+      width: 80%;
+      top: 0;
+    }
+
+    @media (max-width: 768px) {
+      width: 85%;
+      top: -35px;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+      top: -35px;
+      left: -35px;
+    }
+
+    @media (max-width: 400px) {
+      width: 228px;
+    }
     //left: 20px;
   }
 
-  &__button{
+  &__button {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
@@ -48,9 +105,36 @@
     top: 90px;
     left: -22%;
 
+    @media (max-width: 1407px) {
+      left: -25%;
+    }
+
+    @media (max-width: 1215px) {
+      left: -15px;
+      top: 105px;
+    }
+
+    @media (max-width: 1023px) {
+      left: 0;
+      top: 86%;
+    }
+
     .button_blue {
       margin-left: 0;
       margin-right: 0;
+    }
+  }
+
+  &__reverse-columns {
+    display: flex;
+    @media(max-width: 1023px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+
+    @media(max-width: 768px) {
+      flex-direction: column-reverse;
+      justify-content: center;
     }
   }
 }

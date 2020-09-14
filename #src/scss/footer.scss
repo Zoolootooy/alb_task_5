@@ -4,6 +4,9 @@
   opacity: 1;
 
   padding-top: 225px;
+  @media (max-width: 1023px){
+    padding-top: 315px;
+  }
 
 
   &__images {
