@@ -31,7 +31,7 @@
 
     @media(max-width: 768px) {
       font-size: 18px;
-      margin-bottom: 30px;
+      margin-bottom: 0;
     }
   }
 
@@ -61,6 +61,7 @@
     a {
       text-decoration: underline;
       color: #E31D86;
+
 
       &:hover {
         text-decoration: none;

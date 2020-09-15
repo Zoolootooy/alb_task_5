@@ -10,10 +10,6 @@
 
 
   @media(max-width: 1023px) {
-    height: 600px;
-  }
-
-  @media(max-width: 1023px) {
     height: 100%;
   }
 
@@ -82,12 +78,6 @@
       margin-top: 0px;
     }
 
-    //@media(max-width: 1023px) {
-    //  font-size: 42px;
-    //  line-height: 42px;
-    //  margin-top: 0px;
-    //}
-
     @media(max-width: 768px) {
       font-size: 32px;
       text-align: center;
@@ -119,27 +109,12 @@
       padding-right: 2%;
     }
 
-    @media(max-width: 450px) {
-      //width: 185%;
-    }
-
   }
 
   &__review-img {
     margin-top: 5px;
 
-
-
-    @media(max-width: 1023px) {
-      //position: relative;
-      //top: 90px;
-      //height: 50%;
-    }
-
     @media(max-width: 768px) {
-      //position: relative;
-      //top: 50px;
-      //height: 100px;
       width: 122px;
       height: 100px;
       margin-top: 80px;
@@ -160,13 +135,6 @@
   }
 
   &__image {
-
-    //
-    //@media(max-width: 1023px) {
-    //  position: relative;
-    //  top: 100px;
-    //}
-    //
     @media(max-width: 768px) {
       position: relative;
       top: 80px;
@@ -197,13 +165,7 @@
   }
 
   &__reverse-columns {
-    //@extend %auto-margins;
-    //text-align: center;
-    //align-items: center;
-    //justify-content: center;
     display: flex;
-    //flex-direction: column;
-    //flex-wrap: wrap;
 
     @media(max-width: 1023px) {
       flex-direction: column-reverse;

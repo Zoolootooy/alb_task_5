@@ -3,8 +3,6 @@
   margin-right: auto;
 }
 
-$touch: 1023px;
-$desk: 1024px;
 
 
 .plans {
@@ -12,6 +10,11 @@ $desk: 1024px;
   opacity: 1;
   padding-top: 82px;
   padding-bottom: 95px;
+
+  @media (max-width: 1023px){
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
   @extend %auto-margins;
   &__title {
     @extend %auto-margins;
@@ -28,7 +31,7 @@ $desk: 1024px;
     color: #222222;
     opacity: 1;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 18px;
       max-width: 92%;
     }
@@ -44,19 +47,16 @@ $desk: 1024px;
     color: #222222;
     opacity: 1;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 28px;
     }
 
   }
-  &__row {
 
-
-  }
   &__item {
     width: 85%;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       width: 335px;
     }
   }
@@ -70,7 +70,7 @@ $desk: 1024px;
   color: #222222;
   opacity: 1;
 
-  @media(max-width: $touch) {
+  @media(max-width: 1023px) {
     font-size: 28px;
     max-width: 80%;
   }
@@ -98,17 +98,8 @@ $desk: 1024px;
   margin-bottom: 20px;
   margin-top: 20px;
 
-  @media(min-width: $desk) {
+  @media(min-width: 1024px) {
     height: 663px;
-    //margin-left: auto;
-    //margin-right: auto;
-  }
-
-
-
-  @media(max-width: $touch) {
-    //margin-left: auto;
-    //margin-right: auto;
   }
 
 
@@ -124,7 +115,7 @@ $desk: 1024px;
     margin-bottom: 3%;
 
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 32px;
     }
   }
@@ -160,7 +151,7 @@ $desk: 1024px;
     color: #222222;
     opacity: 1;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 44px;
     }
   }
@@ -172,14 +163,14 @@ $desk: 1024px;
     color: #222222;
     opacity: 1;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 14px;
     }
   }
 
   &__icon {
     margin-top: 10%;
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       width: 81.17px;
       margin-top: 0;
       margin-right: 0;
@@ -195,9 +186,9 @@ $desk: 1024px;
 
     max-width: 285px;
 
-    @media(min-width: $desk) {
-      //margin-top: 10%;
-      font-size: 16px/28px;
+    @media(max-width: 1023px) {
+      font-size: 16px;
+      margin-top: 20px;
     }
   }
 
@@ -212,21 +203,22 @@ $desk: 1024px;
 
     margin-top: 3%;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 14px;
+      margin-top: 0;
     }
   }
 
   &__clarification {
     text-align: center;
-    font: normal normal bold 24px Open Sans;
+    font: normal normal bold 24px OpenSans;
     letter-spacing: -0.4px;
     color: #222222;
     opacity: 1;
 
     margin-top: 3%;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 16px;
     }
   }
@@ -249,7 +241,7 @@ $desk: 1024px;
     flex-direction: column;
     flex-wrap: wrap;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       flex-direction: row-reverse;
       justify-content: space-between;
       width: 250px;

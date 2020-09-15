@@ -1,8 +1,8 @@
 $markerSize: 32px;
 $markerLine: 2px;
-$markerItemSize: $markerSize*0.75; //24
-$markerTop: ($markerSize - $markerItemSize)/2; //4
-$markerLeft: ($markerItemSize - $markerLine)/2 + $markerTop; //15
+$markerItemSize: $markerSize*0.75;
+$markerTop: ($markerSize - $markerItemSize)/2;
+$markerLeft: ($markerItemSize - $markerLine)/2 + $markerTop;
 $markerItemTop: ($markerItemSize - $markerLine)/2;
 $markerItemLeft: $markerItemTop*(-1);
 $touch: 1023px;

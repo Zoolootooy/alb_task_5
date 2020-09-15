@@ -1,5 +1,6 @@
 .menu{
   padding-left: 10%;
+  padding-top: 1%;
 
   @media (max-width: 1407px) {
     padding: 1%;
@@ -14,7 +15,6 @@
 
   @media(max-width: 768px) {
     padding-top: 20px;
-    padding-left: 20px;
   }
 
   &__button{
@@ -22,6 +22,10 @@
     display: none;
     @media (max-width: 1023px){
       display: inherit;
+    }
+
+    @media(max-width: 768px) {
+      margin-left: 20px;
     }
   }
 
@@ -52,9 +56,14 @@
     font: normal normal 400 18px OpenSans;
     margin-top: 0;
 
+    &:hover{
+      color: #cccccc;
+    }
+
     @media (max-width: 1023px){
       margin-top: 10px;
       margin-bottom: 10px;
+
     }
   }
 }
