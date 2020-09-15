@@ -1,7 +1,7 @@
 /.idea/
-/#src/img/graphic_assets
+/src/img/graphic_assets
 /dist
 /node_modules/
 /doc/
-/#src/html.txt
-/#src/html_partials/_test.html
+/src/html.txt
+/src/html_partials/_test.html
