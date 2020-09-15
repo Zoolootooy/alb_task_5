@@ -12,6 +12,11 @@ $touch: 1023px;
   background: transparent linear-gradient(292deg, #57D6F7 0%, #736FDB 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
 
+  @media (max-width: 768px) {
+    background: transparent linear-gradient(342deg, #57D6F7 0%, #736FDB 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+
   &__title{
     text-align: center;
     font: normal normal 700 42px OpenSans;
@@ -38,7 +43,6 @@ $touch: 1023px;
 
   &__item{
     margin-bottom: 10px;
-
   }
 
   &__body-item {
@@ -58,8 +62,6 @@ $touch: 1023px;
     background: #3E2155 0% 0% no-repeat padding-box;
     opacity: 1;
     border-radius: 50%;
-
-
   }
 
   &__marker {

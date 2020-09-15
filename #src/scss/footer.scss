@@ -19,7 +19,7 @@
     color: #FFFFFF;
     width: 53px;
     position: relative;
-    top:10px;
+    top:5px;
 
     & div:first-child{
       font: normal normal 700 18px/10px OpenSans;
@@ -29,6 +29,12 @@
   }
 
   &__image{
+    &_3{
+      picture {
+        position: relative;
+        top: -10px;
+      }
+    }
     @media (max-width: 768px){
       &_1{
         order: 1;

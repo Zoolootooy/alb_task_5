@@ -113,7 +113,7 @@
     opacity: 1;
     margin-right: 5px;
     margin-left: 5px;
-    @media (max-width: 768px){
+    @media (max-width: 1023px){
       margin-right: 0px;
       margin-left: 0px;
     }
@@ -141,13 +141,13 @@
     }
 
     &_1 .button, &_3 .button{
-      @media (max-width: 768px){
-       width: 150px;
+      @media (max-width: 1023px){
+       width: 145px;
       }
     }
 
     &_2{
-      @media (max-width: 768px){
+      @media (max-width: 1023px){
         display: flex;
         justify-content: space-between;
       }
@@ -250,6 +250,10 @@
     color: #222222;
     opacity: 1;
     margin-top: 5px;
+
+    @media (max-width: 768px) {
+      margin-top: -20px;
+    }
   }
 
   &__verified{

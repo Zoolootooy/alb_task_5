@@ -78,6 +78,10 @@
       margin-top: 0px;
     }
 
+    @media(max-width: 1023px) {
+      margin-left: 20px;
+    }
+
     @media(max-width: 768px) {
       font-size: 32px;
       text-align: center;
@@ -97,6 +101,7 @@
 
     @media(max-width: 1023px) {
       font-size: 20px;
+      margin-left: 20px;
     }
 
     @media(max-width: 1023px) {
@@ -113,6 +118,10 @@
 
   &__review-img {
     margin-top: 5px;
+
+    @media(max-width: 1023px) {
+      margin-left: 20px;
+    }
 
     @media(max-width: 768px) {
       width: 122px;
