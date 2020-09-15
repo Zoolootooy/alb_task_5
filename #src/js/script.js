@@ -1,4 +1,5 @@
 @@include('footer.js')
+@@include('menu.js')
 
 function testWebP(callback){
     var webP = new Image();

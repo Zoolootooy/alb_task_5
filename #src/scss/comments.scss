@@ -88,8 +88,11 @@
   }
 
   &__pagination{
-    display: flex;
-    justify-content: space-between;
+    @media (max-width: 1023px) {
+      display: flex;
+      flex-direction: row;
+    }
+
   }
 
   &__hidden-pagination{
@@ -100,20 +103,29 @@
   }
 
   &__button{
+    width: 42px;
+    height: 42px;
     text-align: center;
     font: normal normal 600 16px/27px OpenSans;
     letter-spacing: -0.4px;
     color: #222222;
     opacity: 1;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    @media (max-width: 768px){
+      margin-right: 0px;
+      margin-left: 0px;
+    }
 
     &_active{
       background: #0071E3 0% 0% no-repeat padding-box;
       color: #ffffff;
     }
-    @media (max-width: 768px){
 
+  }
+
+  &__buttons{
+    @media (max-width: 1023px){
       &_1{
         order:2;
       }
@@ -127,8 +139,13 @@
       }
     }
 
+    &_2{
+      @media (max-width: 768px){
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
-
 
 }
 
@@ -154,6 +171,9 @@
 
     @media (max-width: 1023px){
       font-size: 14px;
+    }
+    @media (max-width: 768px){
+      line-height: 22px;
     }
   }
 

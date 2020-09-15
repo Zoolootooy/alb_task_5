@@ -14,11 +14,11 @@
   }
 
   @media(max-width: 1023px) {
-    height: 700px;
+    height: 100%;
   }
 
   @media(max-width: 768px) {
-    height: 650px;
+    height: 100%;
   }
 
   &__logo {
@@ -49,6 +49,8 @@
 
     @media(max-width: 768px) {
       display: flex;
+      flex-direction: row;
+      top:0px;
     }
   }
 
@@ -62,30 +64,39 @@
   }
 
   &__title {
-    width: 613px;
-    height: 82px;
     text-align: left;
-    font: normal normal bold 60px OpenSans;
+    font: normal normal 700 60px OpenSans;
     letter-spacing: -1.5px;
     color: #FFFFFF;
     opacity: 1;
 
     margin-top: 15px;
 
-
-    @media(max-width: 1023px) {
-      font-size: 42px;
+    @media(max-width: 1407px) {
+      font-size: 48px;
     }
+
+    @media(max-width: 1215px) {
+      font-size: 42px;
+      line-height: 42px;
+      margin-top: 0px;
+    }
+
+    //@media(max-width: 1023px) {
+    //  font-size: 42px;
+    //  line-height: 42px;
+    //  margin-top: 0px;
+    //}
 
     @media(max-width: 768px) {
       font-size: 32px;
-      width: 185%;
+      text-align: center;
     }
   }
 
   &__subtitle {
     text-align: left;
-    font: normal normal bold 24px OpenSans;
+    font: normal normal 700 24px OpenSans;
     letter-spacing: -0.6px;
     color: #FFFFFF;
     opacity: 1;
@@ -102,8 +113,14 @@
       font-size: 18px;
     }
 
+    @media(max-width: 768px) {
+      text-align: center;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
     @media(max-width: 450px) {
-      width: 185%;
+      //width: 185%;
     }
 
   }
@@ -114,48 +131,69 @@
 
 
     @media(max-width: 1023px) {
-      position: relative;
-      top: 90px;
+      //position: relative;
+      //top: 90px;
+      //height: 50%;
     }
 
     @media(max-width: 768px) {
-      position: relative;
-      top: 50px;
+      //position: relative;
+      //top: 50px;
+      //height: 100px;
+      width: 122px;
+      height: 100px;
+      margin-top: 80px;
+      margin-bottom: 30px;
+      margin-left: 5%;
+      text-align: center;
     }
 
-    @media(max-width: 649px) {
-      width: 125px;
+    @media(max-width: 650px) {
+      position: relative;
+      left: 75px;
     }
 
-    @media(max-width: 450px) {
+    @media(max-width: 500px) {
       position: relative;
-      top: 70px;
+      left: 10px;
     }
   }
 
   &__image {
 
-
-    @media(max-width: 1023px) {
-      position: relative;
-      top: 100px;
-    }
-
+    //
+    //@media(max-width: 1023px) {
+    //  position: relative;
+    //  top: 100px;
+    //}
+    //
     @media(max-width: 768px) {
       position: relative;
-      top: 150px;
-      left: -50px;
+      top: 80px;
+      left: -410px;
     }
 
-    @media(max-width: 450px) {
+    @media(max-width: 650px) {
       position: relative;
-      top: 225px;
-      left: -50px;
+      top: 110px;
+      left: -350px;
+      min-width: 220px !important;
+      height: 132px;
     }
 
-    @media(max-width: 450px) {
-      width: 188px;
+    @media(max-width: 570px) {
+      position: relative;
+      top: 130px;
+      left: -300px;
     }
+
+    @media(max-width: 500px) {
+      position: relative;
+      top: 130px;
+      left: -230px;
+    }
+
+
   }
 
   &__reverse-columns {
@@ -178,59 +216,10 @@
     }
   }
 
-  .container {
-    @media screen and (min-width: 1408px) {
-      max-width: 1344px;
-    }
+}
 
-    @media screen and (max-width: 1407px) {
-      max-width: 1152px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    //@media screen and (max-width: 1051px) {
-    //  max-width: 1024px;
-    //  margin-left: auto;
-    //  margin-right: auto;
-    //}
-
+.nav-menu{
+  @media (max-width: 1023px){
+    padding: 0;
   }
 }
-
-.navbar-start {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.navbar {
-  background-color: transparent;
-
-}
-
-.navbar-item {
-  color: #FFFFFF;
-  font: normal normal 400 18px OpenSans;
-  margin-top: 0;
-}
-
-.menu {
-  padding-left: 10%;
-
-  @media (max-width: 1151px) {
-    padding-left: 1%;
-  }
-
-  @media(max-width: 1023px) {
-    background: #222222 0% 0% no-repeat padding-box;
-    opacity: 1;
-    padding-bottom: 0;
-  }
-}
-
-.navbar-burger {
-  color: #FFFFFF;
-  opacity: 1;
-}
-
-
