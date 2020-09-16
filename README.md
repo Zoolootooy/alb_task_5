@@ -1,6 +1,9 @@
+# Needs
+- npm >= v.5.2.0
+
 # How to start
 - `npm i`
-- `gulp`
+- `npx gulp`
 
 The project has a gulp task manager, it compiles html, scss, js, images, fonts, fonts styles.
 
