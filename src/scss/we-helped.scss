@@ -37,6 +37,10 @@
     flex-direction: column;
     justify-content: center;
 
+    @media (max-width: 1215px) {
+      position: relative;
+      left: 20px;
+    }
   }
 
   &__title {
@@ -109,7 +113,7 @@
     }
 
     @media (max-width: 1215px) {
-      left: -15px;
+      left: -320px;
       top: 105px;
     }
 
