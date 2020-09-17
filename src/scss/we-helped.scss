@@ -41,6 +41,22 @@
       position: relative;
       left: 20px;
     }
+
+    @media (max-width: 1023px){
+      left: 0;
+    }
+
+    @media (max-width: 900px) {
+      margin-top: -90px;
+    }
+
+    @media (max-width: 768px){
+      margin-top: -90px;
+    }
+
+    @media (max-width: 600px){
+      margin-top: -100px;
+    }
   }
 
   &__title {
@@ -80,23 +96,27 @@
     width: 280px;
 
     @media (max-width: 1023px) {
-      width: 80%;
-      top: 0;
+      width: 65%;
+      top: -20px;
     }
 
     @media (max-width: 768px) {
       width: 85%;
-      top: -35px;
+      top: -20px;
     }
 
     @media (max-width: 600px) {
-      width: 100%;
-      top: -35px;
-      left: -35px;
+      width: 250px;
+      top: 0;
+      //left: -50px;
     }
 
-    @media (max-width: 400px) {
-      width: 228px;
+    @media (max-width: 450px) {
+      left: -40px;
+    }
+
+    @media (max-width: 375px) {
+      left: -60px;
     }
   }
 
@@ -119,7 +139,27 @@
 
     @media (max-width: 1023px) {
       left: 0;
-      top: 86%;
+      top: 490px;
+    }
+
+    @media (max-width: 900px) {
+      top: 400px;
+    }
+
+    @media (max-width: 600px) {
+      top: 370px;
+    }
+
+    @media (max-width: 502px) {
+      top: 420px;
+    }
+
+    @media (max-width: 380px) {
+      top: 430px;
+    }
+
+    @media (max-width: 360px) {
+      top: 470px;
     }
 
     .button_blue {

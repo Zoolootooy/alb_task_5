@@ -1,12 +1,18 @@
 .faq {
   padding-top: 70px;
-  padding-bottom: 50px;
-  margin-bottom: -150px;
+  padding-bottom: 180px;
+  margin-bottom: -275px;
 
   background: #FAFAFA 0% 0% no-repeat padding-box;
   opacity: 1;
   @media (max-width: 1023px){
-    margin-bottom: -315px;
+    margin-bottom: -550px;
+    padding-bottom: 270px;
+  }
+
+  @media (max-width: 768px){
+    padding-top: 25px;
+    padding-bottom: 300px;
   }
 
 
