@@ -5,7 +5,6 @@ $markerTop: ($markerSize - $markerItemSize)/2;
 $markerLeft: ($markerItemSize - $markerLine)/2 + $markerTop;
 $markerItemTop: ($markerItemSize - $markerLine)/2;
 $markerItemLeft: $markerItemTop*(-1);
-$touch: 1023px;
 
 
 .why {
@@ -30,7 +29,7 @@ $touch: 1023px;
 
     margin-bottom: 50px;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 32px;
     }
 
@@ -46,7 +45,10 @@ $touch: 1023px;
   &__list {}
 
   &__item{
-    margin-bottom: -20px;
+    margin-top: -40px;
+    &:hover{
+      cursor: pointer;
+    }
   }
 
   &__body-item {
@@ -57,10 +59,15 @@ $touch: 1023px;
       flex-direction: row;
       justify-content: start;
     }
+
   }
 
   &__body-text {
-
+    margin-bottom: 20px !important;
+    @media(max-width: 768px) {
+      position: relative;
+      top: -20px;
+    }
   }
 
 
@@ -110,7 +117,7 @@ $touch: 1023px;
     color: #FFFFFF;
     opacity: 1;
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 16px;
     }
 
@@ -126,10 +133,12 @@ $touch: 1023px;
     color: #EEEEEE;
     opacity: 1;
     display: none;
+    margin-bottom: 40px;
 
 
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       font-size: 16px;
+      margin-bottom: 20px;
     }
 
     @media(max-width: 768px) {
@@ -138,20 +147,24 @@ $touch: 1023px;
   }
 
   &__reverse-columns{
-    align-items: center;
+    //align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 0 !important;
-    @media(max-width: $touch) {
+    @media(max-width: 1023px) {
       flex-direction: column-reverse;
       justify-content: space-between;
+      align-items: center;
     }
   }
 
   &__image{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
     @media(max-width: 500px) {
       max-width: 265px;
