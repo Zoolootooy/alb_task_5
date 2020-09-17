@@ -234,10 +234,10 @@ function fontsStyle(params) {
 function cb() { }
 
 function watchFiles(params) {
-    gulp.watch([path.watch.html],html)
-    gulp.watch([path.watch.css], css)
-    gulp.watch([path.watch.js], js)
-    gulp.watch([path.watch.img], images)
+    gulp.watch([path.watch.html],html_dev)
+    gulp.watch([path.watch.css], css_dev)
+    gulp.watch([path.watch.js], js_dev)
+    gulp.watch([path.watch.img], images_dev)
 }
 
 function clean(params) {
