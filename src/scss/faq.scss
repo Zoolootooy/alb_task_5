@@ -1,5 +1,5 @@
 .faq {
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 180px;
   margin-bottom: -275px;
 
@@ -34,10 +34,14 @@
     color: #222222;
     opacity: 1;
 
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 
     @media(max-width: 1214px) {
       font-size: 18px;
+    }
+
+    @media(max-width: 768px) {
+      margin-bottom: 25px;
     }
   }
 
