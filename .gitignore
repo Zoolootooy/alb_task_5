@@ -3,5 +3,6 @@
 /dist
 /node_modules/
 /doc/
+list.md
 /src/html.txt
 /src/html_partials/_test.html
