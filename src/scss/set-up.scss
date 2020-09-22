@@ -41,7 +41,7 @@
 
     @media(max-width: 768px) {
       font-size: 18px;
-      line-height: 18px;
+      line-height: 24px;
       margin-bottom: 0;
     }
   }
@@ -61,7 +61,7 @@
 
   &__text{
     text-align: left;
-    font: normal normal 400 20px OpenSans;
+    font: normal normal 400 20px/22px OpenSans;
     letter-spacing: -0.5px;
     color: #222222;
 

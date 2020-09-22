@@ -50,6 +50,10 @@
       position: relative;
       top: -50px;
       text-align: center;
+      @media(max-width: 768px) {
+        margin-top: -10px;
+        margin-bottom: -60px;
+      }
     }
 
     &_letter {
