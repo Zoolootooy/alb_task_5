@@ -17,10 +17,19 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  @media (max-width: 768px){
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
   @extend %auto-margins;
   &__title {
     @extend %auto-margins;
     text-align: center;
+
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
   }
   &__text-title {
     @extend %auto-margins;
